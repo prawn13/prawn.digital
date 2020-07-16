@@ -16,7 +16,8 @@
 		
 		function displayNextImage() {
 			x = (x === images.length - 1) ? (window.location.href = 'front.html') : x + 1;
-			document.getElementById("img").src = images[x];
+			var image = document.getElementById("img")
+			image.src = images[x];
 		}
 
 		function startTimer() {
@@ -41,11 +42,11 @@
 			margin-left: auto;
 			margin-right: auto;
 			height: auto;
-			width: 65%;
+			width: auto;
 		}
 	</style>
 
-	<h1 color="White"> enter,, if You Wish.. .</h1>
+	<h1 style="color:black"> enter,, if You Wish.. .</h1>
 	<img id="img" src="images/open.jpg" class="center"/>
 	
 </body>
