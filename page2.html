@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="style.css">
+	<title>penny's place</title>
+
+	<script type = "text/javascript">
+		var images = [], x = -1;
+		images[0] = "/penny/images/open.png";
+		images[1] = "/penny/images/open2.png";
+		images[2] = "/penny/images/open3.png";
+		images[3] = "/penny/images/open4.png";
+		
+		function displayNextImage() {
+			x = (x === images.length - 1) ? (window.location.pathname = 'penny/front.html') : x + 1;
+			document.getElementById("img").src = images[x];
+		}
+
+		function startTimer() {
+			setInterval(displayNextImage, 1000);
+		}
+	</script>
+</head>
+
+<body onload = "startTimer()">
+	<style>
+		body	{
+			background: rgb(0,0,0);
+			color: Black;
+		}
+		h1	{
+			margin-left: 30%;
+			color: whitesmoke;
+		}
+		.center {
+			background: "/penny/images/door.jpg";
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			height: auto;
+			width: 65%;
+		}
+	</style>
+
+	<h1 color="White"> enter,, if You Wish.. .</h1>
+	<img id="img" src="/penny/images/open.png"/>
+	
+</body>
+</html>
