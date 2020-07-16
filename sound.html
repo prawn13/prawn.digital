@@ -9,24 +9,45 @@
 </head>
 <body>
     <style>
-        body{
-            background-color: rosybrown;
+        #outerWrap {
+        position: relative;
+        z-index: 0;
+        height: 100%;
+        width: 1280px;
+        }
+  
+        #sc {
+        position: absolute;
+        z-index: 1;
+        margin-left: 54%;
+        height: 450px;
+        width: 650px;
+        top: -200px;
+        left: 200px;
         }
 
-		.player {
-			display: block;
-			margin-left: 11%;
-			margin-right: auto;
-			height: auto;
-			width: 65%;
-		}
+        #bc {
+        position: absolute;
+        z-index: 2;
+        margin-left: 13%;
+        height: 250px;
+        width: 350px;
+        top: -20px;
+        bottom: 20px;
+        }
 
-        .player2  {
-            display: block;
-			margin-left: 51%;
-			margin-right: auto;
-			height: 220;
-			width: auto;
+        #hide   {
+            position: absolute;
+            z-indez: 2;
+            background-color:rosybrown;
+            height: 200px;
+            width: 400px;
+            top: 400px;
+
+        }
+        
+        body{
+            background-color: rosybrown;
         }
 	</style>
 
@@ -51,11 +72,21 @@
         <!-- /nav -->
     </header>
     <br>
-    <iframe class="player2" width="25%" height="220" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/830070001&color=%231a2321&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
-    </iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"></div>
 
-    <iframe class="player" style="border: 0; width: 350px; height: 350px;" src="https://bandcamp.com/EmbeddedPlayer/album=2298478911/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" seamless>
-        <a href="http://prawn.bandcamp.com/album/pain-vs-prawn">pain vs prawn by prawn</a>
-    </iframe>
+    <div id="outerWrap">
+        <div id="sc">
+            <iframe width="50%" height="500" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/830070001&color=%231a2321&auto_play=false&hide_related=false&show_comments=true&show_user=false&show_reposts=false&show_teaser=false&visual=true">
+            </iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"></div>
+            <div id="hide">
+                
+            </div>
+        </div>
+        
+        <div id="bc">
+            <iframe style="border: 0; width: 200%; height: 280%;" src="https://bandcamp.com/EmbeddedPlayer/album=2298478911/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" seamless>
+                <a href="http://prawn.bandcamp.com/album/pain-vs-prawn"></a>
+            </iframe>
+        </div>  
+    </div>
 </body>
 </html>
