@@ -9,13 +9,13 @@
 
 	<script type = "text/javascript">
 		var images = [], x = -1;
-		images[0] = "/penny/images/open.png";
-		images[1] = "/penny/images/open2.png";
-		images[2] = "/penny/images/open3.png";
-		images[3] = "/penny/images/open4.png";
+		images[0] = "images/open.png";
+		images[1] = "images/open2.png";
+		images[2] = "images/open3.png";
+		images[3] = "images/open4.png";
 		
 		function displayNextImage() {
-			x = (x === images.length - 1) ? (window.location.pathname = 'penny/front.html') : x + 1;
+			x = (x === images.length - 1) ? (window.location.pathname = 'prawn.digital/front.html') : x + 1;
 			document.getElementById("img").src = images[x];
 		}
 
@@ -36,7 +36,7 @@
 			color: whitesmoke;
 		}
 		.center {
-			background: "/penny/images/door.jpg";
+			background: "/images/door.jpg";
 			display: block;
 			margin-left: auto;
 			margin-right: auto;
@@ -46,7 +46,7 @@
 	</style>
 
 	<h1 color="White"> enter,, if You Wish.. .</h1>
-	<img id="img" src="/penny/images/open.png"/>
+	<img id="img" src="images/open.png"/>
 	
 </body>
 </html>
