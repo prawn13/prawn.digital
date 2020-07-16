@@ -15,7 +15,7 @@
 		images[3] = "images/open4.png";
 		
 		function displayNextImage() {
-			x = (x === images.length - 1) ? (window.location.pathname = 'front.html') : x + 1;
+			x = (x === images.length - 1) ? (window.location.href = 'front.html') : x + 1;
 			document.getElementById("img").src = images[x];
 		}
 
@@ -36,7 +36,7 @@
 			color: whitesmoke;
 		}
 		.center {
-			background: "/images/door.jpg";
+			background: "/images/open.png";
 			display: block;
 			margin-left: auto;
 			margin-right: auto;
@@ -46,7 +46,7 @@
 	</style>
 
 	<h1 color="White"> enter,, if You Wish.. .</h1>
-	<img id="img" src="images/open.png"/>
+	<img id="img" src="images/open.png" class="center"/>
 	
 </body>
 </html>
