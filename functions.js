@@ -1,21 +1,24 @@
+let dance = false;
+
+function danceRepeat()  {
+    console.log(dance);
+    if (dance === true)  {
+        clearInterval(prawnDance);
+        dance = false;
+    }
+    else    {
+        setInterval(prawnDance, 1000);
+        dance = true;
+    }
+}   
+
 function prawnDance() {
     var elem = document.getElementById("animate");
     var pos = 0;
     var id = setInterval(frame, 3);
     function frame() {
         if (pos == 350) {
-            var count = 0;
-            if (count == 200)  {
             clearInterval(id);
-            } else {
-            elem.style.top = '300px';
-            elem.style.left = '430px';
-            elem.style.top = '70px';
-            elem.style.left = '90px';
-            elem.style.top = '700px';
-            elem.style.left = '120px';
-            count++;
-            }
         } else {
             pos++;
             elem.style.top = pos + 'px';
