@@ -1,8 +1,7 @@
 let dance = false;
 
 function danceRepeat()  {
-    console.log(dance);
-    if (dance === true)  {
+    if (dance)  {
         clearInterval(prawnDance);
         dance = false;
     }
@@ -10,6 +9,7 @@ function danceRepeat()  {
         setInterval(prawnDance, 1000);
         dance = true;
     }
+    console.log(typeof dancing);
 }   
 
 function prawnDance() {
