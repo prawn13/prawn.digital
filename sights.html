@@ -23,6 +23,19 @@
             background-color:rgb(255, 181, 210);
         }
 
+        img{
+            width: 48vw;
+            height: auto;
+            padding: 5px;
+            align-items: center;
+        }
+
+        .wrapper    {
+            display: grid;
+            grid-template-columns: 50vw 50vw;
+            align-content: center;
+        }
+
     </style>
     <header class="header clear" role="banner">
         <!-- logo -->
@@ -44,9 +57,12 @@
         </nav>
         <!-- /nav -->
     </header>
-    <img src="images/data.jpeg" alt="data">
-    <img src="images/lemon.jpeg" alt="lemon">
-    <img src="images/hallway.jpeg" alt="hallway">
-    <img src="images/ticket.jpeg" alt="ticket">
+    <div class="wrapper"> 
+        <div><img src="images/lemon.jpeg" alt="lemon"></div>
+        <div><img src="images/data.jpeg" alt="data"></div>
+        
+        <div><img src="images/hallway.jpeg" alt="hallway"></div>
+        <div><img src="images/ticket.jpeg" alt="ticket"></div>
+    </div>
 </body>
 </html>
